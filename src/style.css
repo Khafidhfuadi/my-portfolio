@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+body {
+  background-color: #2a2a2a;
+  color: white;
+
+  font-family: "Inter", sans-serif;
+
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Customize the scrollbar appearance */
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 600px;
+}
+
+.nav-custom {
+  background-color: rgba(42, 42, 42, 1);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+a.nav-link {
+  color: white;
+  opacity: 0.5;
+}
+
+a.nav-link:hover {
+  color: white;
+  opacity: 1;
+}
+
+li.nav-item {
+  padding-right: 20px;
+}
+
+a.nav-link.active {
+  color: white !important;
+  opacity: 1;
+}
+
+section {
+  margin-top: 100px;
+}
+
+#summaries,
+.about-sec,
+.contact-sec {
+  height: 100vh;
+  display: flex;
+
+  align-items: center; /* Vertically center the content */
+  margin-top: 0;
+}
+
+.pos-1 {
+  position: absolute;
+  transition: transform 0.5s ease;
+  width: 60px;
+  top: 136px;
+  right: -360px;
+}
+
+.pos-2 {
+  position: absolute;
+  transition: transform 0.5s ease;
+  width: 60px;
+  top: 674px;
+  right: -184px;
+}
+.pos-3 {
+  position: absolute;
+  transition: transform 0.5s ease;
+  width: 60px;
+  top: 377px;
+  left: -360px;
+}
+
+.pos-1:hover,
+.pos-2:hover,
+.pos-3:hover {
+  transform: scale(1.1);
+}
+.arrow-down {
+  position: relative;
+  top: 100px;
+}
+
+a {
+  color: white;
+}
+
+h1,
+h3 {
+  font-weight: 600;
+}
+
+.ava-img {
+  float: right;
+  width: 230px;
+  border-radius: 50%;
+  /* gradient */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+
+.fa-angles-down {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.summary-text,
+.desc-text,
+.quote-text {
+  opacity: 0.7;
+}
+
+.link-text a {
+  color: white;
+}
+
+.project-card,
+.achieve-card,
+.blog-card {
+  background-color: rgba(42, 42, 42, 1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.year {
+  font-size: 12px;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+
+.project-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: rgba(62, 61, 61, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* CSS for fade-up animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-up.fade-up-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 500px) {
+  /* Styles for screen width less than 500px */
+  .navbar-nav {
+    display: none;
+  }
+}
