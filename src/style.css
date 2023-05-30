@@ -186,6 +186,28 @@ h3 {
   transform: translateY(0);
 }
 
+.advanced-badge {
+  background-color: #ff7535;
+  color: #2a2a2a;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.intermediate-badge {
+  background-color: #ffb744;
+  color: black;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.beginner-badge {
+  background-color: #90e6a7;
+  color: black;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
 @media (max-width: 500px) {
   /* Styles for screen width less than 500px */
   .navbar-nav {
